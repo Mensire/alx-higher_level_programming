@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 # 9-print_last_digit.py
 
