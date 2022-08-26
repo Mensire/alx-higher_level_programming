@@ -16,7 +16,9 @@ This program will assign a random signed number to the variable number each time
            * followed by a new line
 
 
-
+* 1. The last digit *\
+This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number\
+	-You can find the source code [here](https://github.com/holbertonschool/0x01.py/blob/master/1-last_digit_py)\
 
 
 
