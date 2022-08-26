@@ -20,16 +20,18 @@ This program will assign a random signed number to the variable number each time
 This program will assign a random signed number to the variable number each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable number\
 	-You can find the source code [here](https://github.com/holbertonschool/0x01.py/blob/master/1-last_digit_py)\
 
-* 2.Program that prints ASCII alphabet*\
+* 2. Program that prints ASCII alphabet*\
 Use string format.\
 [ASCII REFERENCE](https://www.w3schools.com/charsets/ref_html_ascii.asp)
 No use of characters.\
 No use of an import module.
 
-* 3.Prints ASCII alphabet in lower case*\
+* 3. Prints ASCII alphabet in lower case*\
 prints all the letters except q qnd e\
  
-
+* 4. Hexadecimal numbers*\
+[More on Hexadecimals](https://www.techtarget.com/whatis/definition/hexadecimal)\
+print numbers in the range of [0:99] whit one loop.
 
 
 
