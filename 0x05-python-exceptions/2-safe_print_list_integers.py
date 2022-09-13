@@ -1,16 +1,15 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    try:
-        for item in my_list:
-            if isinstance(item, (str, list)):
-                my_list.remove(item)
-        new_list = my_list[:x]
-        count = 0
-        for item in new_list:
-            print("{:d}".format(item), end='')
-            count += 1
-        print("")
-        return count
-    except IndexError:
-        for item in my_list:
-            print("{:d}".format(item), end='')
+
+    index = printed_ints = 0
+    while True:
+        try:
+            if index < x:
+                print("{:d}".format(my_list[index]), end='')
+                index += 1
+                printed_ints += 1
+            else:
+                print()
+                return printed_ints
+        except (ValueError, TypeError):
+            index += 1
