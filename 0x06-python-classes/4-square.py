@@ -1,24 +1,45 @@
 #!/usr/bin/python3
-"""docstring for Square"""
+"""
+Class Square that defines a square.
+"""
 
 
 class Square:
-    """docstring for init"""
+    """
+    Class defining a square object.
+    """
     def __init__(self, size=0):
-        self.__size = size
-        """size getter method """
+        """
+        Args:
+            size (int): The size of the square.
+        """
+        self.size = size
+
     @property
     def size(self):
+        """
+        Get Square size.
+        Returns:
+            The square size.
+        """
         return self.__size
-    """size setter method"""
+
     @size.setter
     def size(self, value):
-        if isinstance(value, int) and value >= 0:
-            self.__size = value
-        elif not isinstance(value, int):
-            raise TypeError("size must be an interger")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
-    """claculate the area of sqaure"""
+        """
+         Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size is < 0.
+        """
+        if not isinstance(value, int):
+            raise TypeError('size must be an integer')
+        if value < 0:
+            raise ValueError('size must be >= 0')
+        self.__size = value
+
     def area(self):
-        return (self.__size ** 2)
+        """
+        Returns:
+            Area of the defined square.
+        """
+        return self.__size * self.__size
