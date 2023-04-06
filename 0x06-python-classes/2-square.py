@@ -4,12 +4,6 @@
 
 class Square:
     """Square class. Has a size"""
-#!/usr/bin/python3
-"""Defines the square class"""
-
-
-class Square:
-    """Square class. Has a size"""
     def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError("size must be an integer")
